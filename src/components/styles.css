@@ -1,0 +1,444 @@
+
+@font-face {
+    font-family: "redhat";
+    src: url(../assets/fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: "redhat-b";
+    src: url(../assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf) ;
+}     
+
+.wrapper{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-width: 405px;
+    max-width: 430px;
+    background: url(../assets/images/pattern-background-desktop.svg) no-repeat ;
+    background-color: #DEE5FF;
+    background-position: top;
+    min-height: 95vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 360px;
+    min-height: 68%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px ;
+    box-shadow: 1px 15px 25px 5px #382AE118;
+    padding-bottom: 15px;
+    font-family: 'redhat';
+}
+.card__hero{
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    height: 30%;
+}
+.card__heroimg{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+.card__headtitle{
+    color: hsl(223, 47%, 23%);
+    font-size: 1.4rem;
+    font-family: 'redhat-b';
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.card__txt{
+    color: hsl(225, 20%, 60%);
+    text-align: center;
+    width: 72%;
+    margin-bottom: 30px;
+    line-height: 1.65;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.card__pricetagdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    width: 85%;
+}
+.pricetagdiv__circleicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDE5FD;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pricetagdiv__icon{
+    width: 50px;
+}
+.pricetagdiv__pricecol{
+    display: flex;
+    flex-direction: column;
+}
+.pricecol__headtxt{
+    font-family: 'redhat-b';
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.pricecol__txt{
+    color: #999EA7;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.pricetagdiv__change{
+    font-size: 0.85rem;
+    font-family: 'redhat-b';
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 55px;
+}
+.pricetagdiv__change:hover{
+    color: hsla(245, 75%, 52%, 0.5);
+    text-decoration: none;
+}
+.card__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 12px 18px 1px #382ae150;
+    background-color: #382AE1;
+    color: white;
+    font-family: 'redhat-b';
+    font-size: 0.95rem;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.card__button:hover{
+    background-color: #382AE1AA;
+}
+.card__canceltxt{
+    color: #7D869A;
+    cursor: pointer;
+    font-family: 'redhat-b';
+    font-weight: 900;
+    font-size: 0.95rem;
+}
+.card__canceltxt:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 1025px) {
+    .wrapper{
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 1250px;
+        max-width: 1750px;
+        background: url(../assets/images/pattern-background-desktop.svg) no-repeat ;
+        background-color: #DEE5FF;
+        background-position: top;
+        min-height: 100vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 400px;
+        min-height: 60%;
+        height: auto;
+        border-radius: 15px 15px 15px 15px ;
+        box-shadow: 1px 15px 25px 5px #382AE118;
+        padding-bottom: 15px;
+        font-family: 'redhat';
+    }
+    .card__hero{
+        border-radius: 15px 15px 0 0 ;
+        width: 100%;
+        height: 30%;
+    }
+    .card__heroimg{
+        width: 100%;
+        border-radius: 15px 15px 0 0 ;
+    
+    }
+    .card__headtitle{
+        color: hsl(223, 47%, 23%);
+        font-size: 1.4rem;
+        font-family: 'redhat-b';
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .card__txt{
+        color: hsl(225, 20%, 60%);
+        text-align: center;
+        width: 70%;
+        margin-bottom: 30px;
+        line-height: 1.55;
+        font-weight: 600;
+        font-size: 0.97rem;
+    }
+    .card__pricetagdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F8F9FE;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        width: 85%;
+        
+    }
+    .pricetagdiv__circleicon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DDE5FD;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pricetagdiv__icon{
+        width: 50px;
+    }
+    .pricetagdiv__pricecol{
+        display: flex;
+        flex-direction: column;
+    }
+    .pricecol__headtxt{
+        font-family: 'redhat-b';
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .pricecol__txt{
+        color: #999EA7;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .pricetagdiv__change{
+        font-size: 0.85rem;
+        font-family: 'redhat-b';
+        font-weight: 700;
+        color: hsl(245, 75%, 52%);
+        cursor: pointer;
+        text-decoration: underline;
+        margin-left: 90px;
+    }
+    .card__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 12px 18px 1px #382ae150;
+        background-color: #382AE1;
+        color: white;
+        font-family: 'redhat-b';
+        font-size: 0.90rem;
+        font-weight: 700;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        width: 85%;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .card__canceltxt{
+        color: #7D869A;
+        cursor: pointer;
+        font-family: 'redhat-b';
+        font-weight: 900;
+        font-size: 0.95rem;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .wrapper{
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 1250px;
+        max-width: 1750px;
+        background: url(../assets/images/pattern-background-desktop.svg) no-repeat ;
+        background-color: #DEE5FF;
+        background-position: top;
+        min-height: 100vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 400px;
+        min-height: 60%;
+        height: auto;
+        border-radius: 15px 15px 15px 15px ;
+        box-shadow: 1px 15px 25px 5px #382AE118;
+        padding-bottom: 15px;
+        font-family: 'redhat';
+    }
+    .card__hero{
+        border-radius: 15px 15px 0 0 ;
+        width: 100%;
+        height: 30%;
+    }
+    .card__heroimg{
+        width: 100%;
+        border-radius: 15px 15px 0 0 ;
+    
+    }
+    .card__headtitle{
+        color: hsl(223, 47%, 23%);
+        font-size: 1.4rem;
+        font-family: 'redhat-b';
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .card__txt{
+        color: hsl(225, 20%, 60%);
+        text-align: center;
+        width: 70%;
+        margin-bottom: 30px;
+        line-height: 1.55;
+        font-weight: 600;
+        font-size: 0.97rem;
+    }
+    .card__pricetagdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F8F9FE;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        width: 85%;
+        
+    }
+    .pricetagdiv__circleicon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DDE5FD;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pricetagdiv__icon{
+        width: 50px;
+    }
+    .pricetagdiv__pricecol{
+        display: flex;
+        flex-direction: column;
+    }
+    .pricecol__headtxt{
+        font-family: 'redhat-b';
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .pricecol__txt{
+        color: #999EA7;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .pricetagdiv__change{
+        font-size: 0.85rem;
+        font-family: 'redhat-b';
+        font-weight: 700;
+        color: hsl(245, 75%, 52%);
+        cursor: pointer;
+        text-decoration: underline;
+        margin-left: 90px;
+    }
+    .card__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 12px 18px 1px #382ae150;
+        background-color: #382AE1;
+        color: white;
+        font-family: 'redhat-b';
+        font-size: 0.90rem;
+        font-weight: 700;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        width: 85%;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .card__canceltxt{
+        color: #7D869A;
+        cursor: pointer;
+        font-family: 'redhat-b';
+        font-weight: 900;
+        font-size: 0.95rem;
+    }
+    
+}
